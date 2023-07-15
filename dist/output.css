@@ -734,6 +734,26 @@ select {
   }
 }
 
+.bottom-\[\] {
+  bottom: ;
+}
+
+.bottom-\[-5\] {
+  bottom: -5;
+}
+
+.bottom-\[-5px\] {
+  bottom: -5px;
+}
+
+.bottom-\[5px\] {
+  bottom: 5px;
+}
+
+.bottom-\[50px\] {
+  bottom: 50px;
+}
+
 .m-14 {
   margin: 3.5rem;
 }
@@ -1215,5 +1235,15 @@ select {
   --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.after\:content-\[\'_\2197\'\]::after {
+  --tw-content: ' ↗';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'Hours\'\]::after {
+  --tw-content: 'Hours';
+  content: var(--tw-content);
 }
 

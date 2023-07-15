@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>What time is it?</title>
 		<link rel="stylesheet" href="dist/output.css" />
 	</head>
 	<body>
@@ -11,8 +11,27 @@
 			class="flex min-h-screen items-center justify-center bg-gradient-to-r from-purple-950 to-indigo-700"
 		>
 			<div class="flex items-center justify-center border-[1px] border-gray-800 bg-gray-800/[.50] rounded-lg drop-shadow-lg">
-				<div class="text-white font-mono text-[100px] px-52 py-20">00:00:00</div>
+				<div class="flex text-white font-mono text-[100px] px-52 py-20">
+          <span id="hrs">00</span>
+          <span>:</span>
+          <span id="mins">00</span>
+          <span>:</span>
+          <span id="sec">00</span>
+        </div>
 			</div>
 		</div>
+    <script>
+      let hrs = document.getElementById("hrs");
+      let min = document.getElementById("min");
+      let sec = document.getElementById("sec");
+      
+      setInterval(()=>{
+        let currentTime = new Date();
+        hrs.innerHTML = currentTime.getHours();
+        mins.innerHTML = currentTime.getMinutes();
+        sec.innerHTML = currentTime.getSeconds();
+      }, 1000)
+      
+    </script>
 	</body>
 </html>
