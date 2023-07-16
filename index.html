@@ -6,32 +6,33 @@
 		<title>What time is it?</title>
 		<link rel="stylesheet" href="dist/output.css" />
 	</head>
-	<body>
+	<body class="bg-black">
 		<div
-			class="flex min-h-screen items-center justify-center bg-gradient-to-r from-purple-950 to-indigo-700"
+			class="flex h-screen items-center justify-center bg-gradient-to-r from-purple-950 to-indigo-700 bg-fixed"
 		>
-			<div class="flex items-center justify-center border-[1px] border-gray-800 bg-gray-800/[.50] rounded-lg drop-shadow-lg">
-				<div class="flex text-white font-mono text-[100px] px-52 py-20">
-          <span id="hrs">00</span>
-          <span>:</span>
-          <span id="mins">00</span>
-          <span>:</span>
-          <span id="sec">00</span>
-        </div>
+			<div
+				class="flex items-center justify-center rounded-lg border-[1px] border-gray-800 bg-gray-800/[.50] drop-shadow-lg"
+			>
+				<div class="flex px-52 py-20 font-mono text-[10vw] text-white">
+					<span id="hrs">00</span>
+					<span>:</span>
+					<span id="mins">00</span>
+					<span>:</span>
+					<span id="sec">00</span>
+				</div>
 			</div>
 		</div>
-    <script>
-      let hrs = document.getElementById("hrs");
-      let min = document.getElementById("min");
-      let sec = document.getElementById("sec");
-      
-      setInterval(()=>{
-        let currentTime = new Date();
-        hrs.innerHTML = currentTime.getHours();
-        mins.innerHTML = currentTime.getMinutes();
-        sec.innerHTML = currentTime.getSeconds();
-      }, 1000)
-      
-    </script>
+		<script>
+			let hrs = document.getElementById('hrs')
+			let min = document.getElementById('min')
+			let sec = document.getElementById('sec')
+
+			setInterval(() => {
+				let currentTime = new Date()
+				hrs.innerHTML = currentTime.getHours()
+				mins.innerHTML = currentTime.getMinutes()
+				sec.innerHTML = currentTime.getSeconds()
+			}, 1000)
+		</script>
 	</body>
 </html>
